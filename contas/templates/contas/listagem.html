@@ -8,7 +8,8 @@
 
     <ul>
     {% for transacao in transacoes %}
-        <li>{{ transacao }} - {{ transacao.data }} - R$ {{ transacao.valor }}</li>
+        <li><a href="{% url 'url_update' transacao.id %}">{{ transacao }} - {{ transacao.data }}
+            - R$ {{ transacao.valor }}</a></li>
     {% endfor %}
     </ul>
 

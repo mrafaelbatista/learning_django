@@ -13,6 +13,10 @@
 
     <button type="submit">Salvar</button>
 
+    {% if transacao %}
+        <a href="{% url 'url_delete' transacao_del.id %}">Remover</a>
+    {% endif %}
+
 
 </form>
 
