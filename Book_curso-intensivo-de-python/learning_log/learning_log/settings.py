@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #My APPS
+    # Apps de terceitos
+    'bootstrap4',
+    # My APPS
     'learning_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -83,10 +86,10 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DB_NAME', 'aula_django'),
+        'NAME': os.environ.get('DB_NAME', 'learning_django'),
         'USER': os.environ.get('DB_USER', 'mrafaelbatista'),
-        'PASSWORD': os.environ.get('DB_PASS', 'mrb123'),
-        'HOST': '127.0.0.1',
+        'PASSWORD': os.environ.get('DB_PASS', '#mrb123'),
+        'HOST': '35.223.52.72',
         'PORT': '5432',
     }
 }
@@ -129,3 +132,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Minhas configurações
+LOGIN_URL = '/login/'

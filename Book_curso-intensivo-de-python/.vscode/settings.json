@@ -1,6 +1,9 @@
 {
     "python.pythonPath": "ll_env\\Scripts\\python.exe",
     "git.ignoreLimitWarning": true,
-    "editor.fontSize": 32,
-    "terminal.integrated.fontSize": 34
+    "terminal.integrated.fontSize": 16,
+    "editor.fontSize": 16,
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true
 }
